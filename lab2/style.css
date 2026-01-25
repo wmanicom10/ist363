@@ -21,6 +21,34 @@ h1 {
     color: #0A3981;
     margin-bottom: 20px;
     font-size: 34px;
+    transform-origin: center;
+    position: relative;
+    top: -200px;
+    animation: animateName 6s infinite;
+    display: inline-block;
+}
+
+@keyframes animateName {
+    0% {
+        top: -200px;
+        transform: rotateY(0deg);
+    }
+    40% {
+        top: 0;
+        transform: rotateY(0deg);
+    }
+    60% {
+        top: 0;
+        transform: rotateY(720deg);
+    }
+    80% {
+        top: 0;
+        transform: rotateY(720deg) scale(1.5);
+    }
+    100% {
+        top: 0;
+        transform: rotateY(720deg) scale(1);
+    }
 }
 
 p {
