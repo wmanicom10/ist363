@@ -1,0 +1,213 @@
+@import 'partials/reset';
+@import 'partials/variables';
+@import 'partials/mixins';
+
+body {
+    font-family: $font;
+}
+
+nav {
+    background-color: $orange;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+
+    h1 {
+        margin: 20px 0 0;
+        font-weight: normal;
+    }
+}
+
+.links { 
+    margin-top: 20px; 
+    
+    span { 
+        padding: 10px; 
+        cursor: pointer; 
+        position: relative;
+        
+        &::after { 
+            content: ''; 
+            position: absolute; 
+            bottom: 5px; 
+            left: 10px; 
+            width: 0; 
+            height: 2px; 
+            background-color: #fff; 
+            transition: width 0.3s ease; 
+        } 
+        
+        &:hover::after { 
+            width: calc(100% - 20px)
+        } 
+    } 
+}
+
+#latest-recipes {
+    @include recipes;
+}
+
+#latest-recipes-container {
+    display: flex;
+}
+
+.recipe-card {
+    margin: 0 10px;
+}
+
+.recipe-image {
+    width: 300px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    display: block;
+}
+
+.recipe-text {
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    text-align: center;
+
+    h3 {
+        margin: 0;
+        padding: 30px 0;
+        color: $melon;
+    }
+}
+
+#newsletter {
+    @extend .section-style;
+    background-color: $lime;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    padding: 30px;
+}
+
+#email-field {
+    border: 1px solid $orange;
+    border-radius: 10px;
+    padding: 10px 10px 7px;
+    width: 300px;
+    margin-right: 5px;
+}
+
+#subscribe-button {
+    @include button-style;
+}
+
+#about-us {
+    @extend .section-style;
+
+    img {
+        width: 100%;
+        border-radius: 10px;
+    }
+
+    h2 {
+        color: $melon;
+        margin-top: 30px;
+    }
+
+    button {
+        @include button-style;
+    }
+}
+
+#older-recipes {
+    @include recipes;
+}
+
+footer {
+    background-color: $mint;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+
+    h4 {
+        font-weight: normal;
+        margin: 10px 0 0;
+    }
+}
+
+@media (max-width: 768px) {
+    nav {
+        padding: 15px;
+        h1 {
+            font-size: 1.5rem;
+            margin: 10px 0 0;
+        }
+    }
+    
+    .links {
+        margin-top: 15px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        span {
+            padding: 8px;
+            font-size: 0.9rem;
+        }
+    }
+    
+    #latest-recipes, #older-recipes {
+        flex-direction: column;
+        padding: 15px;
+    }
+    
+    #latest-recipes-container {
+        flex-direction: column;
+    }
+    
+    .recipe-card {
+        margin: 10px 0;
+        width: 100%;
+    }
+    
+    .recipe-image {
+        width: 100%;
+    }
+    
+    .section-style {
+        margin: 15px;
+    }
+    
+    #newsletter {
+        padding: 20px;
+        img {
+            width: 60px;
+        }
+        p {
+            font-size: 0.95rem;
+        }
+    }
+    
+    #sign-up-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    #email-field {
+        width: 100%;
+        max-width: 200px;
+        margin-right: 0;
+    }
+    
+    #about-us {
+        img {
+            width: 100%;
+        }
+        h2 {
+            font-size: 1.5rem;
+        }
+    }
+    
+    footer {
+        padding: 15px;
+        .links {
+            span {
+                padding: 5px;
+            }
+        }
+    }
+}

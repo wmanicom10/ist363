@@ -1,0 +1,23 @@
+.section-style {
+    margin: 30px;
+    text-align: center;
+}
+
+@mixin recipes {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 20px;
+
+    h2 {
+        color: $melon;
+        font-weight: normal;
+    }
+}
+
+@mixin button-style {
+    background-color: $orange;
+    border: none;
+    color: #fff;
+    border-radius: 10px;
+    padding: 10px 15px 7px;
+}
