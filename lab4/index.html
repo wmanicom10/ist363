@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Lab 4</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+    </head>
+    <body class="m-0 p-0 bg-gray-100">
+        <nav class="bg-indigo-950 flex justify-between items-center p-5">
+            <h1 class="text-yellow-400 text-3xl font-bold">Orange <span class="text-white">News</span></h1>
+            <div class="hidden md:block">
+                <span class="text-white px-2">Home</span>
+                <span class="text-white px-2">Latest</span>
+                <span class="text-white px-2">Scores</span>
+                <span class="text-white px-2">Videos</span>
+                <span class="text-white px-2">More</span>
+            </div>
+        </nav>
+
+        <img src="images/campus.jpg" alt="Syracuse University" class="block rounded-t-lg w-[95%] h-[440px] object-cover mx-auto mt-7">
+        <div class="bg-gray-800 w-[95%] mx-auto rounded-b-lg p-5">
+            <h2 class="text-white text-3xl font-bold">Will the Snow Ever Thaw?</h2>
+            <p class="text-white mt-[5px]">Get the latest scoop on the weather and everything that effects the jet stream</p>
+        </div>
+
+        <div class="w-[95%] mx-auto mt-7">
+            <h3 class="text-2xl">More Featured Stories</h3>
+            <div class="flex justify-between flex-wrap mt-[10px]">
+                <div class="w-full bg-white rounded-lg md:w-[460px] p-[15px] shadow-lg mb-[25px] md:mb-[0px]">
+                    <img src="images/graduates.jpg" class="w-[100%] mx-auto rounded-lg">
+                    <h4 class="font-bold text-xl mt-[10px]">Graduation 2025</h4>
+                    <p>Invite your friends and family to join us in May.</p>
+                </div>
+                <div class="w-full bg-white rounded-lg md:w-[460px] p-[15px] shadow-lg mb-[25px] md:mb-[0px]">
+                    <img src="images/runners.jpg" class="w-[100%] mx-auto rounded-lg">
+                    <h4 class="font-bold text-xl mt-[10px]">Workplace Run</h4>
+                    <p>Run a 5k with your colleagues.</p>
+                </div>
+                <div class="w-full bg-white rounded-lg md:w-[460px] p-[15px] shadow-lg">
+                    <img src="images/artshow.jpg" class="w-[100%] mx-auto rounded-lg">
+                    <h4 class="font-bold text-xl mt-[10px]">Art Show</h4>
+                    <p>The best art of the year on display at Schaffer.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="w-[95%] mx-auto mt-8 flex flex-col md:flex-row justify-between gap-5">
+    <div class="w-full">
+        <h3 class="text-2xl">Top Headlines</h3>
+        <div class="w-full bg-white rounded-lg md:w-[670px] p-[15px] shadow-lg mb-[20px] mt-[10px]">
+            <h4 class="font-bold text-xl">Player X Breaks Record</h4>
+            <p>The record-breaking performance from Player X stunned fans everywhere...</p>
+        </div>
+        <div class="w-full bg-white rounded-lg md:w-[670px] p-[15px] shadow-lg mb-[20px]">
+            <h4 class="font-bold text-xl">Team Y Wins Championship</h4>
+            <p>In an epic showdown, Team Y came out on top with a historic victory...</p>
+        </div>
+        <div class="w-full bg-white rounded-lg md:w-[670px] p-[15px] shadow-lg md:mb-[20px]">
+            <h4 class="font-bold text-xl">Athlete Z Announces Retirement</h4>
+            <p>Athlete Z's retirement shocked the sports world...</p>
+        </div>
+    </div>
+    <div class="w-full">
+        <h3 class="text-2xl">Game Scores</h3>
+        <div class="w-full bg-white rounded-lg md:w-[740px] p-[15px] shadow-lg mb-[20px] mt-[10px]">
+            <div class="flex border-b border-gray-300 py-2 px-1 justify-between">
+                <h5 class="font-bold">Game</h5>
+                <h5 class="font-bold mr-[20px] md:mr-[60px]">Score</h5>
+            </div>
+            <div class="flex justify-between px-1">
+                <div>
+                    <h5 class="my-[15px]">Women's Hockey vs Miami</h5>
+                    <h5 class="my-[15px]">Men's Lacrosse vs St Bonaventure</h5>
+                    <h5 class="my-[15px] mb-[5px]">Men's Basketball vs Duke</h5>
+                </div>
+                <div class="mr-[10px] md:mr-[50px]">
+                    <h5 class="my-[15px]">3 - 1</h5>
+                    <h5 class="my-[15px]">7 - 18</h5>
+                    <h5 class="mt-[15px] mb-[5px]">98 - 75</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+        <div class="w-[95%] mx-auto bg-gray-800 rounded-lg px-8 py-9 mt-[20px] mb-[40px]">
+            <h3 class="text-2xl text-white">Subscribe to Our Newsletter</h3>
+            <p class="text-white my-[15px]">Stay updated with the latest news, scores, and exclusive content delivered straight to your inbox!</p>
+            <form>
+                <input type="email" class="rounded-l-lg p-2 w-[60%]" placeholder="Enter your email">
+                <input type="submit" class="rounded-r-lg bg-yellow-400 block p-2 w-[30%]" value="Subscribe">
+            </form>
+        </div>
+
+    </body>
+</html>
