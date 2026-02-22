@@ -1,0 +1,32 @@
+$navy-blue: #121161;
+$headings-blue: #1a1892;
+$stars-yellow: #FFC106;
+$background-blue: #E4EEFE;
+
+@import '../bootstrap-modules/node_modules/bootstrap/scss/bootstrap.scss';
+
+.bg-navy-blue {
+    background-color: $navy-blue;
+}
+
+.heading {
+    color: $headings-blue;
+}
+
+.stars {
+    color: $stars-yellow;
+}
+
+.section {
+    background-color: $background-blue;
+}
+
+.w-32 {
+    width: 32%;
+}
+
+@include media-breakpoint-up(md) {
+    .w-md-50 {
+        width: 50% !important;
+    }
+}
