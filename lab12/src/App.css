@@ -1,0 +1,82 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 40px;
+}
+
+h2 {
+    margin: 0;
+}
+
+.pioneers {
+    display: flex;
+    margin-top: 20px;
+}
+
+.pioneer {
+    width: 170px;
+    text-align: center;
+    border: 0.5px solid black;
+    margin-right: 10px;
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    position: relative;
+}
+
+.pioneer img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.viewed-badge {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    background-color: red;
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 5px 8px;
+    border-radius: 4px;
+}
+
+.pioneer-details {
+    background-color: #6C757D;
+    width: 40%;
+    padding: 25px;
+    border-radius: 10px;
+    color: #EFF8EF;
+    margin-top: 20px;
+}
+
+.pioneer-details h3 {
+    background-color: #6A727A;
+    border-bottom: 0.5px solid black;
+    padding: 10px 20px;
+    margin: 0;
+}
+
+.pioneer-details img {
+    height: 300px;
+    margin: 30px 0;
+}
+
+.pioneer-details h4 {
+    margin: 0;
+}
+
+.return-button {
+    background-color: #0A6EFD;
+    border: none;
+    border-radius: 5px;
+    color: #EFF8EF;
+    padding: 10px 15px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.return-button:hover {
+    background-color: dodgerblue;
+}
